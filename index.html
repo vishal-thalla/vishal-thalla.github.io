@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vishal Thalla — Senior Software Engineer · Python backend &amp; AI/ML</title>
+  <meta name="description" content="Vishal Thalla is a Johannesburg-based senior software engineer building production Python backends, distributed platforms and AI-integrated systems: FastAPI, Django, Kafka, Kubernetes, Azure, LLM orchestration and agentic workflows.">
+  <meta name="author" content="Vishal Thalla">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16150f" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://vishal-thalla.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Vishal Thalla — Python backend &amp; AI/ML engineer">
+  <meta property="og:description" content="Production backend services, distributed platforms and AI-integrated systems. Python, FastAPI, Django, Kafka, Kubernetes, Azure, LLM orchestration.">
+  <meta property="og:url" content="https://vishal-thalla.github.io/">
+  <meta property="og:site_name" content="Vishal Thalla">
+  <meta property="profile:first_name" content="Vishal">
+  <meta property="profile:last_name" content="Thalla">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vishal Thalla — Python backend &amp; AI/ML engineer">
+  <meta name="twitter:description" content="Production backend services, distributed platforms and AI-integrated systems.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316150f'/%3E%3Cpath d='M14 18h10l8 22 8-22h10L37 48h-10z' fill='%23f6f3ec'/%3E%3Crect x='44' y='42' width='6' height='6' fill='%23e0782f'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="#top" aria-label="Vishal Thalla, back to top">vt<span aria-hidden="true">.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero wrap" id="top" aria-labelledby="hero-name">
+      <p class="eyebrow mono">Midrand, South Africa · Senior Software Engineer</p>
+      <h1 id="hero-name">Vishal Thalla</h1>
+      <p class="hero-pitch">I build Python backends that stay up in production, and the AI&nbsp;systems that sit on top of them: from Kafka integrations and multi-region microservices to LLM tools and agents that fix Kubernetes on their own.</p>
+      <ul class="cta-row" aria-label="Profiles and contact">
+        <li><a class="btn btn-primary" href="https://github.com/vishal-thalla" rel="me noopener">GitHub</a></li>
+        <li><a class="btn" href="https://linkedin.com/in/mrvthalla" rel="me noopener">LinkedIn</a></li>
+        <li><a class="btn" href="mailto:vishthalla@gmail.com">Email</a></li>
+      </ul>
+      <dl class="hero-facts">
+        <div><dt>Now</dt><dd>Software Engineer at Nintex</dd></div>
+        <div><dt>Core</dt><dd>Python · FastAPI · Django · TypeScript · C#/.NET</dd></div>
+        <div><dt>Focus</dt><dd>Distributed backends, LLM orchestration, ML pipelines</dd></div>
+      </dl>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section wrap" id="about" aria-labelledby="about-h">
+      <div class="section-label"><span class="mono">01</span><h2 id="about-h">About</h2></div>
+      <div class="section-body prose">
+        <p class="lede">Five-plus years shipping production backend services, distributed platforms and AI-integrated systems.</p>
+        <p>Most of my work is in Python (FastAPI, Django, DRF), with TypeScript and C#/.NET where the platform calls for it. I design REST APIs and event-driven integrations over Kafka, run services on Kubernetes with Helm and ArgoCD, and provision Azure with Terraform.</p>
+        <p>On the AI side I build services that expose tools to LLMs, agentic workflows that act on real infrastructure, and the data plumbing behind ML: telemetry pipelines, analytics and model-lifecycle APIs on Kubeflow. I have led a small team through a .NET Framework to .NET&nbsp;8 migration, and I still like writing the tests.</p>
+        <p>I studied Computer Engineering at the University of Pretoria and hold the Microsoft Azure AI Engineer Associate certification.</p>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section wrap" id="work" aria-labelledby="work-h">
+      <div class="section-label"><span class="mono">02</span><h2 id="work-h">Selected work</h2></div>
+      <div class="section-body">
+        <article class="feature" aria-labelledby="cnn-h">
+          <header class="feature-head">
+            <p class="tag mono">Featured · Open source · Python</p>
+            <h3 id="cnn-h">cnn-trading-signals</h3>
+            <p class="feature-sub">A research-grade pipeline that turns market data into images and asks whether a CNN can find turning points better than classical models, without lying to itself about it.</p>
+          </header>
+
+          <div class="feature-grid">
+            <div class="prose">
+              <p>OHLCV bars are converted into 15&times;15 <em>indicator images</em>: 15 technical indicators, each computed over 15 look-back periods. Turning points are labelled, and a PyTorch CNN is trained against scikit-learn baselines under <strong>purged walk-forward validation</strong>, so no training window ever leaks into the period it is scored on.</p>
+              <p>Predictions go through a <strong>cost-aware backtester</strong> (spread and commission, execution on the next bar) and are compared against a benchmark, because a model that wins before costs and loses after them is not a result.</p>
+              <p class="note">A ground-up rebuild of a 2023–24 team project co-built with Sirshen Munsamy.</p>
+            </div>
+            <figure class="matrix-fig">
+              <div class="matrix" id="indicator-matrix" role="img" aria-label="Illustration of a 15 by 15 indicator image: 15 indicator rows by 15 look-back-period columns, each cell shaded by value."></div>
+              <figcaption class="mono">15 indicators × 15 periods → one image per bar<br><span class="muted">Illustrative layout, not real data</span></figcaption>
+            </figure>
+          </div>
+
+          <ol class="pipeline" aria-label="Pipeline stages">
+            <li><span class="step mono">01</span><strong>Ingest</strong><span>OHLCV bars</span></li>
+            <li><span class="step mono">02</span><strong>Encode</strong><span>15×15 indicator images</span></li>
+            <li><span class="step mono">03</span><strong>Label</strong><span>Turning points</span></li>
+            <li><span class="step mono">04</span><strong>Train</strong><span>PyTorch CNN vs sklearn baselines</span></li>
+            <li><span class="step mono">05</span><strong>Validate</strong><span>Purged walk-forward</span></li>
+            <li><span class="step mono">06</span><strong>Backtest</strong><span>Spread, commission, next-bar fills</span></li>
+            <li><span class="step mono">07</span><strong>Compare</strong><span>Against benchmark</span></li>
+          </ol>
+
+          <div class="results" id="cnn-results">
+            <p class="mono">Results &middot; 6 experiments, out-of-sample, after costs</p>
+            <ul class="results-list">
+              <li><strong>Learnable labels:</strong> every model found turning points well above chance (0.42&ndash;0.57 macro-F1, where random is 0.33).</li>
+              <li><strong>The CNN was not the best model:</strong> gradient boosting on the same 15&times;15 inputs beat it on F1 in all six runs.</li>
+              <li><strong>No clear edge over chance:</strong> no model's Sharpe beat the 95th percentile of 200 random strategies with the same class mix.</li>
+              <li><strong>Lower risk on SPY:</strong> the models matched buy &amp; hold's Sharpe (0.72&ndash;0.81 against 0.80) while in the market only 40&ndash;60% of the time, with smaller drawdowns, but they made less money.</li>
+            </ul>
+            <p class="results-note">A negative result reached with a sound method: the evaluation harness is the deliverable. <a href="https://github.com/vishal-thalla/cnn-trading-signals#results">Full tables in the README</a>.</p>
+          </div>
+
+          <footer class="feature-foot">
+            <ul class="chips" aria-label="Technologies">
+              <li>Python</li><li>PyTorch</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>pytest</li><li>GitHub Actions</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/vishal-thalla/cnn-trading-signals">View repository</a>
+          </footer>
+        </article>
+
+        <div class="work-list">
+          <article class="work-item" aria-labelledby="omb-h">
+            <p class="tag mono">Open source · TypeScript · Fork</p>
+            <h3 id="omb-h">OpenMausBot</h3>
+            <p>A fork of the open-source Grok Bot alternative, a chat app where a team of AI bots shares a virtual machine. I added two focused changes: a paired, authenticated admin can explicitly grant <em>Full access</em> from a remote browser or desktop client (per thread or for all threads, behind the existing confirmation), and switching between Claude Code and Codex preserves the saved approval level where the destination supports it. Covered by an isolated end-to-end test with fake provider engines.</p>
+            <a class="link-arrow" href="https://github.com/vishal-thalla/OpenMausBot">View repository</a>
+          </article>
+
+          <h3 class="subhead mono">From production work <span class="muted">(private codebases)</span></h3>
+          <div class="highlights">
+            <article class="hl" aria-labelledby="hl1">
+              <p class="tag mono">Nintex · Agentic AI</p>
+              <h4 id="hl1">Self-healing Kubernetes agent</h4>
+              <p>An agentic workflow that autonomously resolves Kubernetes errors by opening automated pull requests for Helm chart updates and re-syncing ArgoCD, reducing mean time to recovery.</p>
+            </article>
+            <article class="hl" aria-labelledby="hl2">
+              <p class="tag mono">Nintex · Data</p>
+              <h4 id="hl2">Real-time telemetry pipeline</h4>
+              <p>Telemetry collection on Azure Service Bus, feeding analytics on telemetry and user-interaction data for operational insight and AI-driven user profiling.</p>
+            </article>
+            <article class="hl" aria-labelledby="hl3">
+              <p class="tag mono">Dariel · Integration</p>
+              <h4 id="hl3">Kafka integration platform</h4>
+              <p>.NET 8 microservices and event-driven integrations across 400+ integration points over Kafka, with automated testing for 99.9% integration reliability.</p>
+            </article>
+            <article class="hl" aria-labelledby="hl4">
+              <p class="tag mono">DotModus · MLOps</p>
+              <h4 id="hl4">ML lifecycle API</h4>
+              <p>A Django and FastAPI backend that orchestrates machine-learning model lifecycles through Kubeflow.</p>
+            </article>
+          </div>
+          <p class="more"><a class="link-arrow" href="https://github.com/vishal-thalla?tab=repositories">More on GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section wrap" id="experience" aria-labelledby="exp-h">
+      <div class="section-label"><span class="mono">03</span><h2 id="exp-h">Experience</h2></div>
+      <div class="section-body">
+        <ol class="timeline">
+          <li>
+            <p class="when mono"><time datetime="2025-05">May 2025</time> – Present</p>
+            <div>
+              <h3>Software Engineer <span class="at">Nintex · Johannesburg</span></h3>
+              <ul>
+                <li>Production services in Python, TypeScript and C# for a multi-region microservices platform.</li>
+                <li>AI-integrated services that expose tools for LLM-driven workflow creation.</li>
+                <li>Agentic workflow that resolves Kubernetes errors by opening PRs for Helm chart updates and re-syncing ArgoCD.</li>
+                <li>Real-time telemetry on Azure Service Bus; analytics for operational insight and AI-driven user profiling.</li>
+                <li>CI/CD with Terraform on Azure; Kubernetes delivery via Helm and ArgoCD (GitOps).</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when mono"><time datetime="2024">2024</time> – Present</p>
+            <div>
+              <h3>Freelance Software Engineer <span class="at">Python + React</span></h3>
+              <ul>
+                <li>AI-powered automation services orchestrating multi-step onboarding, workflow execution and continuous data monitoring.</li>
+                <li>Multi-tenant SaaS backends in Django, DRF and FastAPI with React UIs: tenant isolation, authentication, RBAC and subscription-ready APIs.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when mono"><time datetime="2023-04">Apr 2023</time> – <time datetime="2025-04">Apr 2025</time></p>
+            <div>
+              <h3>Full Stack Engineer, Tech Lead <span class="at">Dariel · Johannesburg</span></h3>
+              <ul>
+                <li>Led a team of four developers.</li>
+                <li>.NET 8 microservices and event-driven integrations across 400+ integration points over Kafka, with automated testing for 99.9% integration reliability.</li>
+                <li>Centralised authentication with Keycloak; introduced Docker containerisation and CI/CD practices.</li>
+                <li>Led the migration of core financial systems from .NET Framework 4.7 to .NET 8.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when mono"><time datetime="2021-12">Dec 2021</time> – <time datetime="2022-05">May 2022</time></p>
+            <div>
+              <h3>Software Developer, Python <span class="at">DotModus · Johannesburg</span></h3>
+              <ul>
+                <li>Django and FastAPI API backend orchestrating ML model lifecycles via Kubeflow.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when mono"><time datetime="2020-10">Oct 2020</time> – <time datetime="2021-06">Jun 2021</time></p>
+            <div>
+              <h3>RPA Developer <span class="at">FIRTech · Johannesburg</span></h3>
+              <ul>
+                <li>Lead developer on two flagship automation projects using Document Understanding models to cut manual data capture.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="earlier">
+            <p class="when mono">Earlier</p>
+            <div>
+              <p>Contract software developer at ByteOrbit; internship at Egnify.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-h">
+      <div class="section-label"><span class="mono">04</span><h2 id="skills-h">Skills</h2></div>
+      <div class="section-body">
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>Python, TypeScript, C#, SQL</dd></div>
+          <div><dt>Backend &amp; APIs</dt><dd>FastAPI, Django, Django REST Framework, .NET 8, REST API design, microservices, multi-tenant SaaS, Keycloak, RBAC, React</dd></div>
+          <div><dt>AI / ML</dt><dd>LLM orchestration, agentic workflows, LLM tool APIs, Azure AI, PyTorch, scikit-learn, Kubeflow, Document Understanding</dd></div>
+          <div><dt>Data &amp; Messaging</dt><dd>PostgreSQL, Redis, Kafka, Azure Service Bus, pandas, NumPy, data analytics</dd></div>
+          <div><dt>Cloud &amp; DevOps</dt><dd>Azure, Docker, Kubernetes, Helm, ArgoCD (GitOps), Terraform, CI/CD, GitHub Actions</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CERTS + EDUCATION -->
+    <section class="section wrap" id="credentials" aria-labelledby="cred-h">
+      <div class="section-label"><span class="mono">05</span><h2 id="cred-h">Credentials</h2></div>
+      <div class="section-body two-col">
+        <div>
+          <h3 class="subhead mono">Certifications</h3>
+          <ul class="plain-list">
+            <li>Microsoft Azure AI Engineer Associate <span class="muted">(AI-102)</span></li>
+            <li>Microsoft Azure AI Fundamentals <span class="muted">(AI-900)</span></li>
+            <li>UiPath Advanced RPA Developer</li>
+            <li>Cisco CCNA &amp; CCNP</li>
+            <li>Google Advanced Analytics</li>
+          </ul>
+        </div>
+        <div id="education">
+          <h3 class="subhead mono">Education</h3>
+          <p class="edu-title">BEng Computer Engineering</p>
+          <p class="muted">University of Pretoria · 2022</p>
+          <p>Final-year project: an AI-powered sign-language translation system optimised for low-power embedded systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-h">
+      <div class="section-label"><span class="mono">06</span><h2 id="contact-h">Contact</h2></div>
+      <div class="section-body">
+        <p class="lede">Building something on Python, data or LLMs that needs to hold up in production? I'd like to hear about it.</p>
+        <p class="contact-mail"><a href="mailto:vishthalla@gmail.com">vishthalla@gmail.com</a>
+          <button type="button" class="copy-btn" data-copy="vishthalla@gmail.com" hidden>Copy</button>
+          <span class="copy-status" role="status" aria-live="polite"></span>
+        </p>
+        <ul class="contact-links">
+          <li><a class="link-arrow" href="https://linkedin.com/in/mrvthalla" rel="me noopener">LinkedIn — in/mrvthalla</a></li>
+          <li><a class="link-arrow" href="https://github.com/vishal-thalla" rel="me noopener">GitHub — vishal-thalla</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span id="year">2026</span> Vishal Thalla · Midrand, South Africa</p>
+      <p class="muted">Hand-written HTML &amp; CSS. No trackers, no frameworks.</p>
+    </div>
+  </footer>
+</body>
+</html>

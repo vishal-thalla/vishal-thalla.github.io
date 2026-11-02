@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vishal Thalla — Senior Software Engineer · Python backend &amp; AI/ML</title>
-  <meta name="description" content="Vishal Thalla is a Johannesburg-based senior software engineer building production Python backends, distributed platforms and AI-integrated systems: FastAPI, Django, Kafka, Kubernetes, Azure, LLM orchestration and agentic workflows.">
+  <meta name="description" content="Vishal Thalla is a software engineer in Midrand, South Africa who builds Python backends, agents and ML experiments, and publishes them in the open.">
   <meta name="author" content="Vishal Thalla">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
@@ -36,7 +36,6 @@
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -49,14 +48,14 @@
     <section class="hero wrap" id="top" aria-labelledby="hero-name">
       <p class="eyebrow mono">Midrand, South Africa · Senior Software Engineer</p>
       <h1 id="hero-name">Vishal Thalla</h1>
-      <p class="hero-pitch">I build Python backends that stay up in production, and the AI&nbsp;systems that sit on top of them: from Kafka integrations and multi-region microservices to LLM tools and agents that fix Kubernetes on their own.</p>
+      <p class="hero-pitch">I build Python backends that stay up, and the AI&nbsp;systems that sit on top of them. Outside work I take ideas like trading with neural networks and test them properly to see if they hold up.</p>
       <ul class="cta-row" aria-label="Profiles and contact">
         <li><a class="btn btn-primary" href="https://github.com/vishal-thalla" rel="me noopener">GitHub</a></li>
         <li><a class="btn" href="https://linkedin.com/in/mrvthalla" rel="me noopener">LinkedIn</a></li>
         <li><a class="btn" href="mailto:vishthalla@gmail.com">Email</a></li>
       </ul>
       <dl class="hero-facts">
-        <div><dt>Now</dt><dd>Software Engineer at Nintex</dd></div>
+        <div><dt>Builds</dt><dd>Backends, agents and ML experiments</dd></div>
         <div><dt>Core</dt><dd>Python · FastAPI · Django · TypeScript · C#/.NET</dd></div>
         <div><dt>Focus</dt><dd>Distributed backends, LLM orchestration, ML pipelines</dd></div>
       </dl>
@@ -66,10 +65,10 @@
     <section class="section wrap" id="about" aria-labelledby="about-h">
       <div class="section-label"><span class="mono">01</span><h2 id="about-h">About</h2></div>
       <div class="section-body prose">
-        <p class="lede">Five-plus years shipping production backend services, distributed platforms and AI-integrated systems.</p>
-        <p>Most of my work is in Python (FastAPI, Django, DRF), with TypeScript and C#/.NET where the platform calls for it. I design REST APIs and event-driven integrations over Kafka, run services on Kubernetes with Helm and ArgoCD, and provision Azure with Terraform.</p>
-        <p>On the AI side I build services that expose tools to LLMs, agentic workflows that act on real infrastructure, and the data plumbing behind ML: telemetry pipelines, analytics and model-lifecycle APIs on Kubeflow. I have led a small team through a .NET Framework to .NET&nbsp;8 migration, and I still like writing the tests.</p>
-        <p>I studied Computer Engineering at the University of Pretoria and hold the Microsoft Azure AI Engineer Associate certification.</p>
+        <p class="lede">I'm a software engineer who likes systems that run on their own: services that recover from failure, agents that act on real infrastructure, and bots that make decisions from data.</p>
+        <p>I mostly write Python (FastAPI, Django), with TypeScript and C# when the platform calls for it. I care about the unglamorous parts that decide whether something survives production: event-driven design, idempotency, observability, clean deploys on Kubernetes, and tests.</p>
+        <p>What pulls me in lately is where LLMs and ML meet real systems: tools that LLMs can call safely, agentic workflows, and ML experiments evaluated honestly enough that a negative result still counts as a result. The projects below are where I try those ideas in the open.</p>
+        <p>I studied Computer Engineering at the University of Pretoria. My final-year project was an AI sign-language translator built for low-power embedded hardware.</p>
       </div>
     </section>
 
@@ -126,27 +125,27 @@
         </article>
 
         <div class="work-list">
-          <h3 class="subhead mono">From production work <span class="muted">(private codebases)</span></h3>
+          <h3 class="subhead mono">What I like building</h3>
           <div class="highlights">
             <article class="hl" aria-labelledby="hl1">
-              <p class="tag mono">Nintex · Agentic AI</p>
-              <h4 id="hl1">Self-healing Kubernetes agent</h4>
-              <p>An agentic workflow that autonomously resolves Kubernetes errors by opening automated pull requests for Helm chart updates and re-syncing ArgoCD, reducing mean time to recovery.</p>
+              <p class="tag mono">Agents</p>
+              <h4 id="hl1">Systems that fix themselves</h4>
+              <p>Agentic workflows that notice something broken, work out a fix and propose it as a reviewed change rather than a silent edit.</p>
             </article>
             <article class="hl" aria-labelledby="hl2">
-              <p class="tag mono">Nintex · Data</p>
-              <h4 id="hl2">Real-time telemetry pipeline</h4>
-              <p>Telemetry collection on Azure Service Bus, feeding analytics on telemetry and user-interaction data for operational insight and AI-driven user profiling.</p>
+              <p class="tag mono">LLM tooling</p>
+              <h4 id="hl2">Tools LLMs can call safely</h4>
+              <p>Typed, permissioned APIs that let a language model do real work in a product without being handed the keys to everything.</p>
             </article>
             <article class="hl" aria-labelledby="hl3">
-              <p class="tag mono">Dariel · Integration</p>
-              <h4 id="hl3">Kafka integration platform</h4>
-              <p>.NET 8 microservices and event-driven integrations across 400+ integration points over Kafka, with automated testing for 99.9% integration reliability.</p>
+              <p class="tag mono">Distributed systems</p>
+              <h4 id="hl3">Event-driven backends</h4>
+              <p>Services that talk over queues and streams, survive restarts and replays, and are tested at the integration seams where things usually break.</p>
             </article>
             <article class="hl" aria-labelledby="hl4">
-              <p class="tag mono">DotModus · MLOps</p>
-              <h4 id="hl4">ML lifecycle API</h4>
-              <p>A Django and FastAPI backend that orchestrates machine-learning model lifecycles through Kubeflow.</p>
+              <p class="tag mono">ML</p>
+              <h4 id="hl4">Experiments that can say no</h4>
+              <p>Models compared against baselines on data they never saw, after costs, so the result is something I'd act on.</p>
             </article>
           </div>
           <p class="more"><a class="link-arrow" href="https://github.com/vishal-thalla?tab=repositories">More on GitHub</a></p>
@@ -154,77 +153,10 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section wrap" id="experience" aria-labelledby="exp-h">
-      <div class="section-label"><span class="mono">03</span><h2 id="exp-h">Experience</h2></div>
-      <div class="section-body">
-        <ol class="timeline">
-          <li>
-            <p class="when mono"><time datetime="2025-05">May 2025</time> – Present</p>
-            <div>
-              <h3>Software Engineer <span class="at">Nintex · Johannesburg</span></h3>
-              <ul>
-                <li>Production services in Python, TypeScript and C# for a multi-region microservices platform.</li>
-                <li>AI-integrated services that expose tools for LLM-driven workflow creation.</li>
-                <li>Agentic workflow that resolves Kubernetes errors by opening PRs for Helm chart updates and re-syncing ArgoCD.</li>
-                <li>Real-time telemetry on Azure Service Bus; analytics for operational insight and AI-driven user profiling.</li>
-                <li>CI/CD with Terraform on Azure; Kubernetes delivery via Helm and ArgoCD (GitOps).</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <p class="when mono"><time datetime="2024">2024</time> – Present</p>
-            <div>
-              <h3>Freelance Software Engineer <span class="at">Python + React</span></h3>
-              <ul>
-                <li>AI-powered automation services orchestrating multi-step onboarding, workflow execution and continuous data monitoring.</li>
-                <li>Multi-tenant SaaS backends in Django, DRF and FastAPI with React UIs: tenant isolation, authentication, RBAC and subscription-ready APIs.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <p class="when mono"><time datetime="2023-04">Apr 2023</time> – <time datetime="2025-04">Apr 2025</time></p>
-            <div>
-              <h3>Full Stack Engineer, Tech Lead <span class="at">Dariel · Johannesburg</span></h3>
-              <ul>
-                <li>Led a team of four developers.</li>
-                <li>.NET 8 microservices and event-driven integrations across 400+ integration points over Kafka, with automated testing for 99.9% integration reliability.</li>
-                <li>Centralised authentication with Keycloak; introduced Docker containerisation and CI/CD practices.</li>
-                <li>Led the migration of core financial systems from .NET Framework 4.7 to .NET 8.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <p class="when mono"><time datetime="2021-12">Dec 2021</time> – <time datetime="2022-05">May 2022</time></p>
-            <div>
-              <h3>Software Developer, Python <span class="at">DotModus · Johannesburg</span></h3>
-              <ul>
-                <li>Django and FastAPI API backend orchestrating ML model lifecycles via Kubeflow.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <p class="when mono"><time datetime="2020-10">Oct 2020</time> – <time datetime="2021-06">Jun 2021</time></p>
-            <div>
-              <h3>RPA Developer <span class="at">FIRTech · Johannesburg</span></h3>
-              <ul>
-                <li>Lead developer on two flagship automation projects using Document Understanding models to cut manual data capture.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="earlier">
-            <p class="when mono">Earlier</p>
-            <div>
-              <p>Contract software developer at ByteOrbit; internship at Egnify.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
 
     <!-- SKILLS -->
     <section class="section wrap" id="skills" aria-labelledby="skills-h">
-      <div class="section-label"><span class="mono">04</span><h2 id="skills-h">Skills</h2></div>
+      <div class="section-label"><span class="mono">03</span><h2 id="skills-h">Skills</h2></div>
       <div class="section-body">
         <dl class="skills">
           <div><dt>Languages</dt><dd>Python, TypeScript, C#, SQL</dd></div>
@@ -238,7 +170,7 @@
 
     <!-- CERTS + EDUCATION -->
     <section class="section wrap" id="credentials" aria-labelledby="cred-h">
-      <div class="section-label"><span class="mono">05</span><h2 id="cred-h">Credentials</h2></div>
+      <div class="section-label"><span class="mono">04</span><h2 id="cred-h">Credentials</h2></div>
       <div class="section-body two-col">
         <div>
           <h3 class="subhead mono">Certifications</h3>
@@ -261,7 +193,7 @@
 
     <!-- CONTACT -->
     <section class="section wrap contact" id="contact" aria-labelledby="contact-h">
-      <div class="section-label"><span class="mono">06</span><h2 id="contact-h">Contact</h2></div>
+      <div class="section-label"><span class="mono">05</span><h2 id="contact-h">Contact</h2></div>
       <div class="section-body">
         <p class="lede">Building something on Python, data or LLMs that needs to hold up in production? I'd like to hear about it.</p>
         <p class="contact-mail"><a href="mailto:vishthalla@gmail.com">vishthalla@gmail.com</a>

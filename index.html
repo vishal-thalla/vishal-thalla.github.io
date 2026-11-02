@@ -87,7 +87,7 @@
             <div class="prose">
               <p>OHLCV bars are converted into 15&times;15 <em>indicator images</em>: 15 technical indicators, each computed over 15 look-back periods. Turning points are labelled, and a PyTorch CNN is trained against scikit-learn baselines under <strong>purged walk-forward validation</strong>, so no training window ever leaks into the period it is scored on.</p>
               <p>Predictions go through a <strong>cost-aware backtester</strong> (spread and commission, execution on the next bar) and are compared against a benchmark, because a model that wins before costs and loses after them is not a result.</p>
-              <p class="note">A ground-up rebuild of a 2023–24 team project co-built with Sirshen Munsamy.</p>
+              <p class="note">A ground-up rebuild of my 2023–24 trading-bot project.</p>
             </div>
             <figure class="matrix-fig">
               <div class="matrix" id="indicator-matrix" role="img" aria-label="Illustration of a 15 by 15 indicator image: 15 indicator rows by 15 look-back-period columns, each cell shaded by value."></div>
